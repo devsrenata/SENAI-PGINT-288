@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{ /* todos os elentos*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Ubuntu";
+
+}
+
+body{
+    background-color: black;
+}
+/* @media screen and (max-width: 600px) {
+    *{
+        font-size: 8px !important;
+    }
+    
+} */
+
+header{
+    position: absolute;
+    z-index: 1;
+    width: 100%; /*coments*/
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+    padding: 15px; /* Margem interna */
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    color: white;
+    height: 20px;
+    margin-left: 100px ;
+    
+}
+
+header span a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.banner {
+    background-image: url(../../img/bg3.jpg);
+    background-size: cover; /* 90% dos casos usar esse */
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+
+    display: flex; /* diplay flex vai ativar e o align items vai alinhar na vertical */
+    align-items: flex-end;
+    padding-left: 10px;
+    padding-bottom: 260px;
+
+    position: relative;
+  
+    
+}
+
+.banner h1  {
+    color: white;
+    font-size: 3em;
+    padding-left: 110px;
+    margin-bottom: 10px;
+ 
+
+}
+
+.banner P{
+    color: white;
+    width: 60vw;
+    padding-left: 110px;
+  
+
+}
+
+.filmes-series{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    min-height: 200px;
+    padding: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.filmes-series .inputs{
+
+    margin-bottom: 40px;
+    display: flex;
+
+
+}
+
+.filmes-series .inputs label{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+
+
+}
+
+.filmes-series .inputs label input, 
+.filmes-series .inputs label select{
+
+    width: 250px;
+    margin-top: 10px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    padding: 5px;
+    height: 30px;
+}
+
+.filmes-series-mb{
+    padding-bottom: 120px;
+
+}
+
+.filmes-series h2 {
+    color: white;
+    
+}
+
+.filmes-series .card-container{
+   
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+
+    display: flex;
+
+
+}
+
+.filmes-series .card img{
+    
+    height:150px;
+
+    background-size: cover;
+    background-position: center;
+  
+
+    margin: 10px;
+   
+
+
+
+}
+
+footer{
+    width: 100%;
+    height: auto;
+
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+footer p{
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+
+footer .icons-container{
+    display: flex;
+    
+}
+
+footer .icons-container img{
+    height: 30px;
+    margin: 10px;
+}
+
+.gradiente{
+position: absolute;
+width: 100%;
+height: 50vh;
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 26%, rgba(255,255,255,0) 100%);
+bottom: 0px;
+left: 0;
+z-index: 0;
+
+}
+
+.thor{
+    position: absolute;
+    z-index: 1;
+    bottom: 30vh; /*distancia pra baixo*/
+
+}
+
+/* position absolute sempre vai obedecer quem é position relative, se não houver nenhum relative vai ser o navegador*/
+
+
+
+.sinopse{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    min-height: 200px;
+    padding-left: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+   
+    display: flex;
+    
+    
+    
+    
+
+}
+
+.sinopse h1{
+    color: white;
+    display: flex;
+    padding: 20px;
+    font-size: 2em;
+   
+    
+    
+
+}
+
+.sinopse p{
+    color: white;
+    padding: 20px;
+    font-size: 1em;
+    width: 50%;
+    
+}
+
+.elenco{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    min-height: 200px;
+    padding: 10px;
+    display: flex;
+
+}
+
+.card-elenco{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+
+    display: flex;
+    
+}
+
+ .card-elenco .card img{
+    width:120px ;
+    
+
+    background-size: cover;
+    background-position: center;
+  
+
+    margin: 10px;
+
+}
+
+.card-elenco .card h2{
+    color: white;
+    padding: 10px;
+    padding-bottom: 120px;
+}
+
+.trailer{
+    margin-top: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 100%;
+   
+}
+
+@media (max-width: 760px) {
+
+    .banner{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 35px;
+       
+    }
+    
+    .banner p{
+        font-size: 20px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .thor h1{
+        padding:15px ;
+    }
+
+    .thor p{
+        padding:15px;
+    }
+
+    .filmes-series {
+        width: 100%;
+        height: auto;
+        background-color: rgb(0, 0, 0);
+        min-height: 200px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .filmes-series .inputs {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .filmes-series .inputs label {
+       
+      
+        margin-right: 20px;
+        padding-bottom: 20px;
+
+
+    }
+
+    .filmes-series .card-container {
+        width: 100%;     
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+
+    .card img{
+        
+        height: 300px !important;
+        
+    }
+
+    .filmes-series h2 {
+        padding-top: 50px;
+    }
+
+    footer {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+
+
+
+
+
+    
+    
+
+
+}
